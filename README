@@ -1,55 +1,64 @@
-Setup : 
+# Setup : 
 1. Install the extension - plawright test for vs code
 2. press ctrl+shift+p  and type install plawright
 3. uncheck the github flow and press ok, the required installations start installing 
 
-Using Command prompt:
+# Using Command prompt:
 1. write npm init playwright@latest
 
-Commands we use daily :-
-  npx playwright test
+# Commands we use daily :-
+  1. npx playwright test
     Runs the end-to-end tests.
 
-  npx playwright test --ui
+  2. npx playwright test --ui
     Starts the interactive UI mode.
 
-  npx playwright test --project=chromium
+  3. npx playwright test --project=chromium
     Runs the tests only on Desktop Chrome.
 
-  npx playwright test example
+  4. npx playwright test example
     Runs the tests in a specific file.
 
-  npx playwright test --debug
+  5. npx playwright test --debug
     Runs the tests in debug mode.
 
-  npx playwright codegen
+  6. npx playwright codegen
     Auto generate tests with Codegen.
 
-  npx playwright show-report
+  7. npx playwright show-report
     redirect to html test report in the browser
   
   
-  npx playwright test --headed --ui
-  # or in config:
-  use: { headless: false, launchOptions: { slowMo: 300 } }
-  
+  8. npx playwright test --headed --ui
+    or in config:
+    use: { headless: false, launchOptions: { slowMo: 300 } }
     to run the test in ui mode 
 
-We suggest that you begin by typing:
+# We suggest that you begin by typing:
 
     npx playwright test
 
-And check out the following files:
+# And check out the following files:
   - .\tests\example.spec.ts - Example end-to-end test
   - .\playwright.config.ts - Playwright Test configuration
 
-Visit https://playwright.dev/docs/intro for more information. ✨
+# Visit https://playwright.dev/docs/intro for more information. ✨
 
-Recording and generating the Test Cases:- 
+# Recording and generating the Test Cases:- 
 
   under the testing extension -> at bottom PLAYWRIGHT -> Under the tools -> select Record new
 
-Running the test cases on different Browsers :-
+# Running the test cases on different Browsers :-
 
 1.  under the testing extension -> at bottom PLAYWRIGHT -> Under the projects -> select the browser on which you want to test
-2.  
+2.  undet the config.ts, goto the projects and uncomment the browsers you need and comment out that you dont need
+
+# Making the HTML Report in human readable form :-
+
+1. Under your test file -> inside the function write the below code for each step and this make html into humand readable form
+
+    await test.step("Message you want to see on report", async () => {
+
+      "Your code you want to execute in this step"
+      
+    })
