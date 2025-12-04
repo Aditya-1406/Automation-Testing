@@ -1,0 +1,15 @@
+{
+  "name": "typescript-test",
+  "version": "1.0.0",
+  "description": "Setup : \r 1. Install the extension - plawright test for vs code\r 2. press ctrl+shift+p  and type install plawright\r 3. uncheck the github flow and press ok, the required installations start installing",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1"
+  }
+}

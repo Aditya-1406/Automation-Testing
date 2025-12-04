@@ -1,0 +1,55 @@
+Setup : 
+1. Install the extension - plawright test for vs code
+2. press ctrl+shift+p  and type install plawright
+3. uncheck the github flow and press ok, the required installations start installing 
+
+Using Command prompt:
+1. write npm init playwright@latest
+
+Commands we use daily :-
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+  npx playwright show-report
+    redirect to html test report in the browser
+  
+  
+  npx playwright test --headed --ui
+  # or in config:
+  use: { headless: false, launchOptions: { slowMo: 300 } }
+  
+    to run the test in ui mode 
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.ts - Example end-to-end test
+  - .\playwright.config.ts - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. ✨
+
+Recording and generating the Test Cases:- 
+
+  under the testing extension -> at bottom PLAYWRIGHT -> Under the tools -> select Record new
+
+Running the test cases on different Browsers :-
+
+1.  under the testing extension -> at bottom PLAYWRIGHT -> Under the projects -> select the browser on which you want to test
+2.  
