@@ -67,3 +67,25 @@
 
 1. under the testing extension -> at bottom PLAYWRIGHT -> Under the tools -> select the record at cursor
 2. it will start adding the code into the file from where you keep the your mouse cursor
+
+# Run a specific test file 
+
+1. In the terminal enter the below command :-
+
+     npx playwright test filelocation/file name
+
+     for example :-  npx playwright test chapter1/2_Rec_Curs.spec.ts
+
+# Run a test script on specific browser
+
+1. open the terminal and use the below command 
+
+     npx playwright test chapter1/2_Rec_Curs.spec.ts --project='$'
+     $ = your browser name under the projects in config.ts
+
+# Using the Codegen
+
+1. In terminal type the command npx playwright codegen
+2. now test the scenario you want to test as you test under the recording 
+3. it will generate code parallely, keep in mind dont close the browser until you dont copy your code 
+4. Create a new file and paste the copied there and happy testing
