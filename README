@@ -62,3 +62,8 @@
       "Your code you want to execute in this step"
       
     })
+
+# Using Record at Cursor 
+
+1. under the testing extension -> at bottom PLAYWRIGHT -> Under the tools -> select the record at cursor
+2. it will start adding the code into the file from where you keep the your mouse cursor
