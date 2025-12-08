@@ -109,3 +109,72 @@
 3. you can give 4 value to this :-
     off || on || on-first-failure || only-on-failure
 4. now run your script and check the report ss is now there 
+
+# Locators in Playwright : -
+
+1. Role-based Locators:-
+
+  page.getByRole('button', { name: 'Submit' });
+  page.getByRole('link', { name: /Sign in/i });
+  page.getByRole('checkbox', { checked: true });
+
+2. Text-based Locators :-
+
+  page.getByText('Welcome');
+  page.getByText(/Hello World/i);
+
+3. Label-based Locators:-
+
+  page.getByLabel('Username');
+  page.getByLabel(/Password/i);
+
+4. Placeholder-based Locators:-
+
+  page.getByPlaceholder('Enter your email');
+
+5. Alt Text Locators(Image):-
+
+  page.getByAltText('Company Logo');
+
+6.  Title-based Locators:-
+
+  page.getByTitle('Close');
+
+7.  Test ID Locators:- need to update in config.ts
+
+  page.getByTestId('submit-button');
+
+8. CSS Selectors:-
+
+  page.locator('.btn-primary');
+  page.locator('#username');
+  page.locator('input[type="text"]');
+
+9. XPath Selectors:-
+
+  page.locator('//button[text()="Submit"]');
+
+10. ✅ Chained Locators:- 
+
+  page.getByRole('list').getByText('Item 1');
+
+
+11. nth() for Indexing:-
+
+  page.locator('li').nth(2); // third list item
+
+
+12. Filter Locators :-
+
+  page.locator('button').filter({ hasText: 'Save' });
+  page.locator('div').filter({ has: page.locator('span') });
+
+
+13. Frame Locators:-
+
+  page.frameLocator('#my-frame').getByText('Inside Frame');
+
+
+14. Combining Locators :-
+
+  page.locator('form >> text=Submit');
