@@ -89,3 +89,15 @@
 2. now test the scenario you want to test as you test under the recording 
 3. it will generate code parallely, keep in mind dont close the browser until you dont copy your code 
 4. Create a new file and paste the copied there and happy testing
+
+# Adding the screenshots
+
+1. we can use screenshot function for taking the screenshot.
+2. it basically need one parameter path which contain the location to save the file
+3. also we can pass a flag named fullpage : true to take full page screen shot
+
+    await page.screenshot({path:'folder_name/image_name.png',fullPage:true})
+
+    Example : await test.step("Adding the full page Screenshot", async()=>{
+              await page.screenshot({path:'screenshots/fullpagescreenshot.png',fullPage:true})
+              })
