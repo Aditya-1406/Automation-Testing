@@ -101,3 +101,11 @@
     Example : await test.step("Adding the full page Screenshot", async()=>{
               await page.screenshot({path:'screenshots/fullpagescreenshot.png',fullPage:true})
               })
+
+# Adding the screenshots into html report from config.js
+
+1. goto config.ts and under it goto use.
+2. add a parameter named screeshot to it 
+3. you can give 4 value to this :-
+    off || on || on-first-failure || only-on-failure
+4. now run your script and check the report ss is now there 
