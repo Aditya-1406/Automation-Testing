@@ -178,3 +178,33 @@
 14. Combining Locators :-
 
   page.locator('form >> text=Submit');
+
+
+# Hooks :- They are special functions which run before and after the test cases
+
+1. Hooks are of 4 types :
+. beforeAll
+. beforeEach
+. afterAll
+. afterEach
+
+2. Below is the example of all the four types 
+
+  test.beforeAll(async()=>{
+    console.log("Running before all the test cases")
+});
+
+test.afterAll(async()=>{
+    console.log("Running after all the test cases")
+});
+
+test.beforeEach(async({page})=>{
+    console.log("Running before each  test cases")
+    await page.goto("https://practice.expandtesting.com/")
+});
+
+test.afterEach(async()=>{
+    console.log("Running after each test cases")
+});
+
+3. the test will run in parallel execution, so in order to prevent it u have to changes workers attribute to 1 in config.ts under defineconfig function under the parallel test on CI comment
