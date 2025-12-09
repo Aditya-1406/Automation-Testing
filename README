@@ -208,3 +208,7 @@ test.afterEach(async()=>{
 });
 
 3. the test will run in parallel execution, so in order to prevent it u have to changes workers attribute to 1 in config.ts under defineconfig function under the parallel test on CI comment
+
+# Dropdown in playwright 
+
+--> You can refer 3_Dropdown.spec.ts file under chapter 2 folder under the tests folder
