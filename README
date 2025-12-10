@@ -218,3 +218,10 @@ test.afterEach(async()=>{
 --> for locating iframe, we use frameLocator function
 --> for drag and drop, we use dragTo function 
 --> refer 4_Iframe_DragDrop file under chapter 2 under tests folder
+
+# using the mouse actions, hover and doubleclick
+
+--> we can pass the button parameter inside the click function and metion which button to be clicked 
+--> for hover, we can directly use the hover function
+--> for doubleclick, we can directly use the dblclick function
+--> refer 5_Mouseaction file under chapter 2 under tests folder
