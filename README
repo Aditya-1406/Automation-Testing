@@ -225,3 +225,8 @@ test.afterEach(async()=>{
 --> for hover, we can directly use the hover function
 --> for doubleclick, we can directly use the dblclick function
 --> refer 5_Mouseaction file under chapter 2 under tests folder
+
+# using the Keyboard actions
+
+--> we can use page.keyboard.press function to use keyboard actions
+--> refer 6_Keyboardaction file under chapter 2 under tests folder
