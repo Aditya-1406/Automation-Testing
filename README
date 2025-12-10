@@ -212,3 +212,9 @@ test.afterEach(async()=>{
 # Dropdown in playwright 
 
 --> You can refer 3_Dropdown.spec.ts file under chapter 2 folder under the tests folder
+
+# iframes and Drag drop 
+
+--> for locating iframe, we use frameLocator function
+--> for drag and drop, we use dragTo function 
+--> refer 4_Iframe_DragDrop file under chapter 2 under tests folder
