@@ -230,3 +230,8 @@ test.afterEach(async()=>{
 
 --> we can use page.keyboard.press function to use keyboard actions
 --> refer 6_Keyboardaction file under chapter 2 under tests folder
+
+# handling the date field 
+
+--> Its just simple click and fill option
+--> refer 7_Datefeild file under chapter 2 under tests folder
