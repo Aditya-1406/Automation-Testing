@@ -234,4 +234,45 @@ test.afterEach(async()=>{
 # handling the date field 
 
 --> Its just simple click and fill option
---> refer 7_Datefeild file under chapter 2 under tests folder
+--> refer 7_Datefield file under chapter 2 under tests folder
+
+
+# Hard and soft Assertion
+
+✅ Hard Assertions
+
+Definition: When an assertion fails, the test immediately stops execution and is marked as failed.
+Behavior:
+
+Stops at the first failure.
+Subsequent steps in the same test are not executed.
+
+
+Use Case:
+
+Critical checks where continuing the test makes no sense (e.g., login must succeed before proceeding).
+
+
+Example (Playwright / Jest):
+await expect(page.locator('#username')).toBeVisible(); // If fails, test stops hereShow more lines
+
+
+
+✅ Soft Assertions
+
+Definition: When an assertion fails, the test continues execution, and all failures are collected and reported at the end.
+Behavior:
+
+Allows multiple validations in one test without stopping at the first failure.
+Useful for UI validations or data checks.
+
+
+Use Case:
+
+Non-critical checks or when you want a full report of all mismatches.
+
+
+Example (Playwright with soft option):
+
+await expect.soft(page.locator('#username')).toBeVisible(); // Test continues even if fails
+await expect.soft(page.locator('#password')).toBeVisible();
