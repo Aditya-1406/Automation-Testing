@@ -292,3 +292,8 @@ use: {
 --> to skip a particular test case we use TEST.SKIP
 --> to run a particular test case we TEST.ONLY
 --> for reference, refer chapter3/1_Annotations
+
+# Grouping of test cases
+
+--> to group test cases we TEST.DESCRIBE
+--> for reference, refer chapter3/2_Grouping
