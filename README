@@ -285,3 +285,10 @@ use: {
     headless: false, 
     launchOptions: { slowMo: 300 },
   },
+
+
+# Annotations 
+
+--> to skip a particular test case we use TEST.SKIP
+--> to run a particular test case we TEST.ONLY
+--> for reference, refer chapter3/1_Annotations
