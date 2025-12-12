@@ -276,3 +276,12 @@ Example (Playwright with soft option):
 
 await expect.soft(page.locator('#username')).toBeVisible(); // Test continues even if fails
 await expect.soft(page.locator('#password')).toBeVisible();
+
+# Adding the trace viewer in HTML report 
+
+--> under the config.ts --> under the use section --> change the trace to on
+use: {
+    trace: 'on',
+    headless: false, 
+    launchOptions: { slowMo: 300 },
+  },
