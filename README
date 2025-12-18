@@ -304,3 +304,9 @@ use: {
 --> for reference, refer chapter3/3_tags
 --> to run the tagged test type below command in cli
 npx playwright test --grep '@tagname '
+
+
+# Repeat the test cases 
+
+--> enter the below command in cli in the end of the command --repeat-each= No. of time you want to repeat
+npx playwright test --grep '@RegressionTesting' --repeat-each=2
