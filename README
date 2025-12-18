@@ -297,3 +297,10 @@ use: {
 
 --> to group test cases we TEST.DESCRIBE
 --> for reference, refer chapter3/2_Grouping
+
+# Adding the tags 
+
+--> to give tags to test cases we pass a object in test function and add tag parameter in it
+--> for reference, refer chapter3/3_tags
+--> to run the tagged test type below command in cli
+npx playwright test --grep '@tagname '
