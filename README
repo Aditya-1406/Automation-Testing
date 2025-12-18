@@ -310,3 +310,15 @@ npx playwright test --grep '@tagname '
 
 --> enter the below command in cli in the end of the command --repeat-each= No. of time you want to repeat
 npx playwright test --grep '@RegressionTesting' --repeat-each=2
+
+
+# Retry testcase on failure 
+
+/* Retry on CI only */
+  retries: process.env.CI ? 2 : 0,
+
+
+update this in config file to retry test on the failure
+
+/* Retry on CI only */
+  retries: process.env.CI ? 2 : 1,
