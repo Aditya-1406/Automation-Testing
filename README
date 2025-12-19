@@ -329,3 +329,7 @@ update this in config file to retry test on the failure
 --> start a for loop on the array and pass test function into it 
 --> now use the local variable inside the fuction where you want to pass the data
 --> for reference, refer chapter3/5_Parameterize
+
+# Visual Testing 
+
+--> for reference, refer chapter3/6_Visualtest
