@@ -322,3 +322,10 @@ update this in config file to retry test on the failure
 
 /* Retry on CI only */
   retries: process.env.CI ? 2 : 1,
+
+# Parameterize test cases:
+
+--> create an array of the data you want to pass
+--> start a for loop on the array and pass test function into it 
+--> now use the local variable inside the fuction where you want to pass the data
+--> for reference, refer chapter3/5_Parameterize
