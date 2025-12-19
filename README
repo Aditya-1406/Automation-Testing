@@ -333,3 +333,13 @@ update this in config file to retry test on the failure
 # Visual Testing 
 
 --> for reference, refer chapter3/6_Visualtest
+
+# Working with timeouts
+
+--> there are many timeouts but frequently we use 4 
+1. test timeout
+2. expect timeout
+3. action timeout
+4. global timeout
+
+--> for reference, refer chapter3/7_timout and config.ts
