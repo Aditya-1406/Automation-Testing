@@ -343,3 +343,13 @@ update this in config file to retry test on the failure
 4. global timeout
 
 --> for reference, refer chapter3/7_timout and config.ts
+
+# added the config.json file and src folder 
+
+tsconfig.json is for TypeScript compiler settings. It controls how TypeScript code is parsed and type-checked across your project—things like module type (ESM/CJS), target JavaScript version, strictness, path aliases, and type libraries. It ensures your IDE and tsc know how to handle your code.
+
+
+playwright.config.ts is for Playwright test runner settings. It defines how tests run—test directories, timeouts, retries, browsers/devices, baseURL, tracing, screenshots, and reporters. It does not affect TypeScript compilation.
+
+
+You need both because one manages code typing and compilation, and the other manages test execution behavior.
