@@ -353,3 +353,12 @@ playwright.config.ts is for Playwright test runner settings. It defines how test
 
 
 You need both because one manages code typing and compilation, and the other manages test execution behavior.
+
+
+# browser context and new tabs
+
+---> refer to file chapter4/1_Context.spec.ts
+--> we pass the browser object in the function 
+--> then we create a new context using browser
+--> then we create a new page using that context
+--> then also we create new tab using the newpage under the same context
