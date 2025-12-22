@@ -362,3 +362,12 @@ You need both because one manages code typing and compilation, and the other man
 --> then we create a new context using browser
 --> then we create a new page using that context
 --> then also we create new tab using the newpage under the same context
+
+
+# Rerun the only failed test cases
+
+--> to rerun the only failed test cases use below command 
+
+npx playwright test --last-failed
+
+--> for example : - npx playwright test chapter4 --last-failed  
