@@ -381,3 +381,8 @@ npx playwright test --last-failed
 
 --> we use .check function to check radio or check box
 --> refer chapter4/4_Radio.spec.ts
+
+# Iteration over the mutiple elements 
+
+--> we use three way for iteration 
+--> refer chapter4/5_Iteration.spec.ts
