@@ -371,3 +371,8 @@ You need both because one manages code typing and compilation, and the other man
 npx playwright test --last-failed
 
 --> for example : - npx playwright test chapter4 --last-failed  
+
+# Handling different kind of alerts 
+
+--> by page.once we can handle different type of alerts 
+--> for more refer chapter4/ 3_Alerts.spec.ts
