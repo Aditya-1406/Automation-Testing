@@ -376,3 +376,8 @@ npx playwright test --last-failed
 
 --> by page.once we can handle different type of alerts 
 --> for more refer chapter4/ 3_Alerts.spec.ts
+
+# handling the radio buttons and check boxes
+
+--> we use .check function to check radio or check box
+--> refer chapter4/4_Radio.spec.ts
