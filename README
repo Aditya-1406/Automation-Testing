@@ -391,3 +391,26 @@ npx playwright test --last-failed
 
 --> we use the .textContent(), innerText(), .getAttribute() respectively
 --> refer chapter4/6_textcontent.spec.ts
+
+
+# Allure reports 
+
+--> install allure report cmd line tool
+ npm install -g -save-dev allure-commandline
+
+--> install the allure playwright adapter
+  npm install --save-dev allure-playwright
+
+-->add the below config in config config.ts
+  reporter:[
+    ['allure-playwright']
+  ]
+
+--> run test script
+  npx playwright test
+
+--> generate allure report
+  npx allure serve allure-results
+  or
+  allure generate allure-results --clean
+  allure open
