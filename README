@@ -401,7 +401,7 @@ npx playwright test --last-failed
 --> install the allure playwright adapter
   npm install --save-dev allure-playwright
 
--->add the below config in config config.ts
+-->add the below config in config.ts
   reporter:[
     ['allure-playwright']
   ]
@@ -421,3 +421,11 @@ npx playwright test --last-failed
 or
 --> we can achieve it  through the commmand --workers No. of workers
 ex:- npx playwright test chapter3/2_Grouping.spec.ts --workers 3
+
+# video recording 
+
+--> update the below config in config.ts
+  use : {
+    video :'on',
+  }
+  it will attach video to html report also
