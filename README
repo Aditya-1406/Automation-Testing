@@ -386,3 +386,8 @@ npx playwright test --last-failed
 
 --> we use three way for iteration 
 --> refer chapter4/5_Iteration.spec.ts
+
+# working with textcontent, innertext and attribute 
+
+--> we use the .textContent(), innerText(), .getAttribute() respectively
+--> refer chapter4/6_textcontent.spec.ts
