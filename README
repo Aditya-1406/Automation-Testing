@@ -414,3 +414,10 @@ npx playwright test --last-failed
   or
   allure generate allure-results --clean
   allure open
+
+# parallelism test execution
+
+--> we can change the number in the config.ts file
+or
+--> we can achieve it  through the commmand --workers No. of workers
+ex:- npx playwright test chapter3/2_Grouping.spec.ts --workers 3
