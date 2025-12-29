@@ -1,24 +1,94 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="33.005410000000005">
-<testsuite name="chapter5\3_DataCsv.spec.ts" timestamp="2025-12-29T10:13:49.189Z" hostname="chromium" tests="2" failures="0" skipped="0" time="29.914" errors="0">
-<testcase name="test with testuser1" classname="chapter5\3_DataCsv.spec.ts" time="17.808">
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="46.566638000000005">
+<testsuite name="chapter5\4_DataXlsx.spec.ts" timestamp="2025-12-29T11:27:37.041Z" hostname="chromium" tests="3" failures="1" skipped="0" time="40.757" errors="0">
+<testcase name="test with test123" classname="chapter5\4_DataXlsx.spec.ts" time="14.613">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\test-finished-1.png]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test123-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\video.webm]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test123-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\trace.zip]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test123-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="test with testuser2" classname="chapter5\3_DataCsv.spec.ts" time="12.106">
+<testcase name="test with test456" classname="chapter5\4_DataXlsx.spec.ts" time="15.391">
+<failure message="4_DataXlsx.spec.ts:12:9 test with test456" type="FAILURE">
+<![CDATA[  [chromium] › chapter5\4_DataXlsx.spec.ts:12:9 › test with test456 › Validating the Error ─────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Timeout: 5000ms
+    - Expected substring  - 1
+    + Received string     + 5
+
+    - Incorrect username or password.
+    +
+    +       
+    +       This account does not support password sign-in, please try another sign-in method or account recovery.
+    +
+    +      
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for getByRole('alert')
+        9 × locator resolved to <div role="alert" aria-atomic="true" class="js-flash-alert">…</div>
+          - unexpected value "
+          
+          This account does not support password sign-in, please try another sign-in method or account recovery.
+    
+         "
+
+
+      31 |
+      32 |         await test.step("Validating the Error", async () => {
+    > 33 |             await expect(page.getByRole('alert')).toContainText('Incorrect username or password.');
+         |                                                   ^
+      34 |         })
+      35 |
+      36 |     });
+        at C:\Users\aditya.garg\Desktop\TypeScript-test\tests\chapter5\4_DataXlsx.spec.ts:33:51
+        at C:\Users\aditya.garg\Desktop\TypeScript-test\tests\chapter5\4_DataXlsx.spec.ts:32:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\chapter5-4_DataXlsx-test-with-test456-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\chapter5-4_DataXlsx-test-with-test456-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\chapter5-4_DataXlsx-test-with-test456-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\chapter5-4_DataXlsx-test-with-test456-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\chapter5-4_DataXlsx-test-with-test456-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\test-finished-1.png]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test456-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\video.webm]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test456-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\trace.zip]]
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test456-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test456-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="test with test789" classname="chapter5\4_DataXlsx.spec.ts" time="10.753">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test789-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test789-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\chapter5-4_DataXlsx-test-with-test789-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -465,3 +465,8 @@ uncomment the above three lines from config.ts
 
 --> install the csv parser, using this command :- npm install csv-parse --save
 --> refer chapter5/3_DataCsv.spec.ts
+
+# Data driven testing using excel file 
+--> install the xlsx, using this command :- npm install xlsx --save
+--> create a helper functions under the utils under the src folder
+--> --> refer chapter5/4_DataXlsx.spec.ts
