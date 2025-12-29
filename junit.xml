@@ -1,71 +1,24 @@
-<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="89.82263999999999">
-<testsuite name="chapter5\2_DataJson.spec.ts" timestamp="2025-12-29T09:27:36.248Z" hostname="chromium" tests="3" failures="1" skipped="0" time="52.916" errors="0">
-<testcase name="test with undefined" classname="chapter5\2_DataJson.spec.ts" time="21.663">
-<failure message="2_DataJson.spec.ts:22:9 test with undefined" type="FAILURE">
-<![CDATA[  [chromium] › chapter5\2_DataJson.spec.ts:22:9 › test with undefined › Entering the Credentials ───
-
-    Error: locator.fill: value: expected string, got undefined
-
-      29 |         await test.step("Entering the Credentials", async () => {
-      30 |             await page.getByRole('textbox', { name: 'Username or email address' }).click();
-    > 31 |             await page.getByRole('textbox', { name: 'Username or email address' }).fill(cred.username);
-         |                                                                                    ^
-      32 |             await page.getByRole('textbox', { name: 'Password' }).click();
-      33 |             await page.getByRole('textbox', { name: 'Password' }).fill(cred.password );
-      34 |
-        at C:\Users\aditya.garg\Desktop\TypeScript-test\tests\chapter5\2_DataJson.spec.ts:31:84
-        at C:\Users\aditya.garg\Desktop\TypeScript-test\tests\chapter5\2_DataJson.spec.ts:29:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\chapter5-2_DataJson-test-with-undefined-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-results\chapter5-2_DataJson-test-with-undefined-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\chapter5-2_DataJson-test-with-undefined-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\chapter5-2_DataJson-test-with-undefined-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-results\chapter5-2_DataJson-test-with-undefined-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="33.005410000000005">
+<testsuite name="chapter5\3_DataCsv.spec.ts" timestamp="2025-12-29T10:13:49.189Z" hostname="chromium" tests="2" failures="0" skipped="0" time="29.914" errors="0">
+<testcase name="test with testuser1" classname="chapter5\3_DataCsv.spec.ts" time="17.808">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-undefined-chromium\test-failed-1.png]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-undefined-chromium\video.webm]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-undefined-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-undefined-chromium\trace.zip]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser1-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="test with testuser1" classname="chapter5\2_DataJson.spec.ts" time="16.153">
+<testcase name="test with testuser2" classname="chapter5\3_DataCsv.spec.ts" time="12.106">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser1-chromium\test-finished-1.png]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser1-chromium\video.webm]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser1-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="test with testuser2" classname="chapter5\2_DataJson.spec.ts" time="15.1">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser2-chromium\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser2-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\chapter5-2_DataJson-test-with-testuser2-chromium\trace.zip]]
+[[ATTACHMENT|test-results\chapter5-3_DataCsv-test-with-testuser2-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -77,110 +77,11 @@
   },
   "suites": [
     {
-      "title": "chapter5\\2_DataJson.spec.ts",
-      "file": "chapter5/2_DataJson.spec.ts",
+      "title": "chapter5\\3_DataCsv.spec.ts",
+      "file": "chapter5/3_DataCsv.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
-        {
-          "title": "test with undefined",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 21663,
-                  "error": {
-                    "message": "Error: locator.fill: value: expected string, got undefined",
-                    "stack": "Error: locator.fill: value: expected string, got undefined\n    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:31:84\n    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:29:9",
-                    "location": {
-                      "file": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts",
-                      "column": 84,
-                      "line": 31
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Entering the Credentials\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39mpassword )\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts",
-                        "column": 84,
-                        "line": 31
-                      },
-                      "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Entering the Credentials\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39mpassword )\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:31:84\u001b[22m\n\u001b[2m    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:29:9\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Navigating to URL",
-                      "duration": 13213
-                    },
-                    {
-                      "title": "Entering the Credentials",
-                      "duration": 1136,
-                      "error": {
-                        "message": "Error: locator.fill: value: expected string, got undefined",
-                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:31:84\n    at C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts:29:9",
-                        "location": {
-                          "file": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts",
-                          "column": 84,
-                          "line": 31
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Entering the Credentials\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Username or email address'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39musername)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Password'\u001b[39m })\u001b[33m.\u001b[39mfill(cred\u001b[33m.\u001b[39mpassword )\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m"
-                      }
-                    }
-                  ],
-                  "startTime": "2025-12-29T09:27:41.862Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-undefined-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-undefined-chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-undefined-chromium\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-undefined-chromium\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\tests\\chapter5\\2_DataJson.spec.ts",
-                    "column": 84,
-                    "line": 31
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "1a3a9bab330439752438-9ad8e68825e7cd9bde36",
-          "file": "chapter5/2_DataJson.spec.ts",
-          "line": 22,
-          "column": 9
-        },
         {
           "title": "test with testuser1",
           "ok": true,
@@ -194,10 +95,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 16153,
+                  "duration": 17808,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -205,38 +106,38 @@
                   "steps": [
                     {
                       "title": "Navigating to URL",
-                      "duration": 7618
+                      "duration": 10909
                     },
                     {
                       "title": "Entering the Credentials",
-                      "duration": 4463
+                      "duration": 4225
                     },
                     {
                       "title": "Click on signing button",
-                      "duration": 1517
+                      "duration": 1552
                     },
                     {
                       "title": "Validating the Error",
-                      "duration": 101
+                      "duration": 36
                     }
                   ],
-                  "startTime": "2025-12-29T09:28:28.308Z",
+                  "startTime": "2025-12-29T10:13:50.299Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser1-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser1-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser1-chromium\\video.webm"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser1-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser1-chromium\\trace.zip"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser1-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -244,9 +145,9 @@
               "status": "expected"
             }
           ],
-          "id": "1a3a9bab330439752438-6db69ca969b514d315ae",
-          "file": "chapter5/2_DataJson.spec.ts",
-          "line": 22,
+          "id": "44a27f75b4f18c8058bd-7ad2bd3e65be62b3cd48",
+          "file": "chapter5/3_DataCsv.spec.ts",
+          "line": 19,
           "column": 9
         },
         {
@@ -262,10 +163,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 15100,
+                  "duration": 12106,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -273,38 +174,38 @@
                   "steps": [
                     {
                       "title": "Navigating to URL",
-                      "duration": 6811
+                      "duration": 5507
                     },
                     {
                       "title": "Entering the Credentials",
-                      "duration": 4372
+                      "duration": 4194
                     },
                     {
                       "title": "Click on signing button",
-                      "duration": 1627
+                      "duration": 1598
                     },
                     {
                       "title": "Validating the Error",
-                      "duration": 80
+                      "duration": 46
                     }
                   ],
-                  "startTime": "2025-12-29T09:28:46.833Z",
+                  "startTime": "2025-12-29T10:14:09.208Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser2-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser2-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser2-chromium\\video.webm"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser2-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-2_DataJson-test-with-testuser2-chromium\\trace.zip"
+                      "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter5-3_DataCsv-test-with-testuser2-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -312,9 +213,9 @@
               "status": "expected"
             }
           ],
-          "id": "1a3a9bab330439752438-b59d345d8bedb7692a5c",
-          "file": "chapter5/2_DataJson.spec.ts",
-          "line": 22,
+          "id": "44a27f75b4f18c8058bd-4600162cf53f50ffdd11",
+          "file": "chapter5/3_DataCsv.spec.ts",
+          "line": 19,
           "column": 9
         }
       ]
@@ -322,11 +223,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-29T09:27:35.714Z",
-    "duration": 89822.64,
+    "startTime": "2025-12-29T10:13:49.109Z",
+    "duration": 33005.41,
     "expected": 2,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

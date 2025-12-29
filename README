@@ -459,4 +459,9 @@ uncomment the above three lines from config.ts
 # Data driven testing using Json file 
 
 --> refer chapter5/2_DataJson.spec.ts
--->
+
+
+# Data driven testing using CSV file
+
+--> install the csv parser, using this command :- npm install csv-parse --save
+--> refer chapter5/3_DataCsv.spec.ts
