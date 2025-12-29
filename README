@@ -455,3 +455,8 @@ uncomment the above three lines from config.ts
 --> add an env variable in .env file 
 --> use the variable using process.env.VARIABLE_NAME
 --> refer chapter5/1_RunEnv.spec.ts
+
+# Data driven testing using Json file 
+
+--> refer chapter5/2_DataJson.spec.ts
+-->
