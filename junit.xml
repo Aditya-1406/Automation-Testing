@@ -1,35 +1,16 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="70.398657">
-<testsuite name="chapter4\7_TestReports.spec.ts" timestamp="2025-12-29T06:33:30.497Z" hostname="chromium" tests="3" failures="0" skipped="0" time="67.826" errors="0">
-<testcase name="Smoke Testing › test1" classname="chapter4\7_TestReports.spec.ts" time="23.08">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.867486999999999">
+<testsuite name="chapter5\1_RunEnv.spec.ts" timestamp="2025-12-29T06:46:11.360Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.571" errors="0">
+<testcase name="textcontent" classname="chapter5\1_RunEnv.spec.ts" time="8.571">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\test-finished-1.png]]
+<![CDATA[Aditya Garg
+Aditya Garg
+p-name vcard-fullname d-block overflow-hidden
 
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\video.webm]]
+[[ATTACHMENT|test-results\chapter5-1_RunEnv-textcontent-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Regression Testing › test2" classname="chapter4\7_TestReports.spec.ts" time="21.882">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\test-finished-1.png]]
+[[ATTACHMENT|test-results\chapter5-1_RunEnv-textcontent-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Regression Testing › test3" classname="chapter4\7_TestReports.spec.ts" time="22.864">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\trace.zip]]
+[[ATTACHMENT|test-results\chapter5-1_RunEnv-textcontent-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

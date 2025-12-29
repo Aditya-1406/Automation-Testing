@@ -444,3 +444,14 @@ reporter: [['html'],
   ['json', { outputFile: 'test-results.json' }],
   ['junit', { outputFile: 'junit.xml' }]  
 ],
+
+# Getting the data from env file
+
+--> first install the dotenv using this command:- npm install dotenv --save
+--> import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '.env') }); 
+uncomment the above three lines from config.ts
+--> add an env variable in .env file 
+--> use the variable using process.env.VARIABLE_NAME
+--> refer chapter5/1_RunEnv.spec.ts
