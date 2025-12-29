@@ -429,3 +429,18 @@ ex:- npx playwright test chapter3/2_Grouping.spec.ts --workers 3
     video :'on',
   }
   it will attach video to html report also
+
+
+# Creating different types of the test reports 
+
+--> for different types of the test report, we have to make changes in the config.ts file 
+--> we can generater list,dot,json,junit,allure reports 
+--> below is the configuration code
+
+reporter: [['html'],
+  ['allure-playwright'],
+  ['list'],
+  ['dot'],
+  ['json', { outputFile: 'test-results.json' }],
+  ['junit', { outputFile: 'junit.xml' }]  
+],

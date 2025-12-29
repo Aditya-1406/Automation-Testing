@@ -1,0 +1,264 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\playwright.config.ts",
+    "rootDir": "C:/Users/aditya.garg/Desktop/TypeScript-test/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/aditya.garg/Desktop/TypeScript-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/aditya.garg/Desktop/TypeScript-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "chapter4\\7_TestReports.spec.ts",
+      "file": "chapter4/7_TestReports.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Smoke Testing",
+          "file": "chapter4/7_TestReports.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-29T06:33:31.668Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Smoke-Testing-test1-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Smoke-Testing-test1-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Smoke-Testing-test1-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d283002836c0b6ca0191-c59d75ce6194e2dd16a8",
+              "file": "chapter4/7_TestReports.spec.ts",
+              "line": 5,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Regression Testing",
+          "file": "chapter4/7_TestReports.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21882,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-29T06:33:55.402Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test2-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test2-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test2-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d283002836c0b6ca0191-4c3db2090f6bad273131",
+              "file": "chapter4/7_TestReports.spec.ts",
+              "line": 30,
+              "column": 9
+            },
+            {
+              "title": "test3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22864,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-29T06:34:17.479Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test3-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test3-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\aditya.garg\\Desktop\\TypeScript-test\\test-results\\chapter4-7_TestReports-Regression-Testing-test3-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d283002836c0b6ca0191-efa841b480827019fc37",
+              "file": "chapter4/7_TestReports.spec.ts",
+              "line": 51,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-29T06:33:30.465Z",
+    "duration": 70398.657,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,37 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="70.398657">
+<testsuite name="chapter4\7_TestReports.spec.ts" timestamp="2025-12-29T06:33:30.497Z" hostname="chromium" tests="3" failures="0" skipped="0" time="67.826" errors="0">
+<testcase name="Smoke Testing › test1" classname="chapter4\7_TestReports.spec.ts" time="23.08">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Smoke-Testing-test1-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Regression Testing › test2" classname="chapter4\7_TestReports.spec.ts" time="21.882">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test2-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Regression Testing › test3" classname="chapter4\7_TestReports.spec.ts" time="22.864">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\chapter4-7_TestReports-Regression-Testing-test3-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
